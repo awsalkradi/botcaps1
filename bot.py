@@ -6,7 +6,7 @@ import sqlite3
 
 # إعداد المتغيرات
 TOKEN = "8034873303:AAEhhLirEbvhypz4uRGfw5X6VtPY4uIaT_o"  # ضع التوكن الجديد الخاص بك هنا
-CHANNEL_LINK = "https://t.me/+STXr8irRaSQyZmI6"  # ضع رابط قناتك هنا
+CHANNEL_LINK = "https://t.me/+Sy18bATvBtg5ODgy"  # ضع رابط قناتك هنا
 REFERRAL_LINK = "https://t.me/DurovCapsBot/caps?startapp=374668608"  # ضع رابط الإحالة الخاص بك هنا
 ADMIN_ID = 6783842427  # ضع معرف المدير الخاص بك هنا
 
@@ -107,9 +107,12 @@ async def main():
         await application.start()
         print("Bot is running...")
         await application.run_polling()
+    except Exception as e:
+        print(f"Error: {e}")
     finally:
         await application.stop()
         await application.shutdown()
 
 if __name__ == "__main__":
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())  # حلقة أحداث متوافقة
     asyncio.run(main())
