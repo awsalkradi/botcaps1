@@ -4,7 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # إعداد المتغيرات
-TOKEN = "7711511284:AAEKS7wCBN0W50ZZl1LiQiMJfgk_EdfrEn0"
+TOKEN = "8034873303:AAEhhLirEbvhypz4uRGfw5X6VtPY4uIaT_o"
 CHANNEL_LINK = "https://t.me/+Sy18bATvBtg5ODgy"  # ضع رابط قناتك هنا
 REFERRAL_LINK = "https://t.me/DurovCapsBot/caps?startapp=374668608"  # ضع رابط الإحالة الخاص بك هنا
 ADMIN_ID = 6783842427  # معرف المدير (ID)
